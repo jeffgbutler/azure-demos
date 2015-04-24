@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact List Demo</title>
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.6/css/jquery.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/tabletools/2.2.4/css/dataTables.tableTools.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/mobileservices/MobileServices.Web-1.2.5.min.js"></script>
+<script src="//cdn.datatables.net/1.10.6/js/jquery.dataTables.min.js"></script>
+<script src="//cdn.datatables.net/tabletools/2.2.4/js/dataTables.tableTools.min.js"></script>
+<script src="app.js"></script>
+<script src="js/blockui/jquery.blockUI.js"></script>
+</head>
+<body>
+  <h1>Bootcamp Contact List</h1>
+  <fieldset>
+    <legend>Contact Form</legend>
+    First Name: <input type="text" id="firstName"/><br/><br/>
+    Last Name: <input type="text" id="lastName"/><br/><br/>
+    Contact Type: <select id="contactType"></select><br/><br/>
+    <input type="hidden" id="contactId"/>
+    <input type="button" id="addButton" value="Add Contact" />
+    <input type="button" id="updateButton" value="Update Contact" style="display: none;" />
+    <input type="button" id="deleteButton" value="Delete Contact" style="display: none;" />
+  </fieldset>
+  
+  <br/>
+  <table id="contactTable" class="display">
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Contact Type</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody">
+    </tbody>
+  </table>
+</body>
+</html>

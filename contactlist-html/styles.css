@@ -1,0 +1,15 @@
+body {
+  font-family: Arial,sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+  color: #3b8dbd;
+}
+
+fieldset {
+  background-image: url(images/azure-bc-2015-logo_front.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
